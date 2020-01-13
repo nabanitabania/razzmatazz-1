@@ -1,0 +1,42 @@
+1. pdf correction
+2. styling the registration form
+3. mongo clound
+4. data clear
+5. admin+attendance
+6. date in landing
+
+7. source /home/razzmata/nodevenv/deploy/12/bin/activate && cd /home/razzmata/deploy
+ Run npm install from this
+
+8. Check if the port is busy
+9. keep the home page as index.ejs
+10. Compress the image and install a loader
+11. mongo connection error
+
+
+////////////////////
+12. Razzmatazz word not in same line in mobile
+13. size of angle -> small
+14. loader
+
+oikyotaan.nits@gmail.com
+acc name-bania12
+bania123@
+oikyotaan das
+NIT Slchar
+my voda number
+
+s3.us-east-2.amazonaws.com/s3/buckets/data-razzmatazz/deploy
+imuser
+abhisek
+Abcabcabv##34
+
+
+///////
+source /home/razzmata/nodevenv/deploy/12/bin/activate && cd /home/razzmata/deploy
+
+1.NIT Silchar student can't do
+2.Add music
+3. Loader
+4. Events heading in event page
+5. Add CSGO photo
