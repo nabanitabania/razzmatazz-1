@@ -18,7 +18,7 @@ var indexRoutes = require("./routes/index");
 app.use(indexRoutes);
 
 //Application listen at port 8080
-var port = process.env.PORT;
+var port = process.env.PORT|3000;
 app.listen(port,(err)=>{
 	if(err)
 		console.log(err);
