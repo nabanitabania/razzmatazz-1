@@ -6,9 +6,6 @@ router.get("/",(req,res)=>{
 	res.render("index")
 })
 
-router.get("/n",(req,res)=>{
-	res.render("newIndex")
-})
 
 //Event Page
 router.get("/events",(req,res)=>{

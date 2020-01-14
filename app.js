@@ -1,8 +1,5 @@
 var express = require('express'),
 	bodyParser = require('body-parser'),
-	mongoose = require('mongoose'),
-	passport = require('passport'),
-	LocalStrategy = require('passport-local'),
 	methodOverride = require('method-override');
 
 var app = express();
@@ -21,7 +18,7 @@ var indexRoutes = require("./routes/index");
 app.use(indexRoutes);
 
 //Application listen at port 8080
-var port = process.env.PORT|8080;
+var port = process.env.PORT;
 app.listen(port,(err)=>{
 	if(err)
 		console.log(err);

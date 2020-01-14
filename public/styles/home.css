@@ -159,7 +159,7 @@ body {
   #mushroom {
     position: relative;
     transform-origin: left top;
-    animation: scale 2s infinite;
+    animation: scale 4s infinite;
     
   }
 
@@ -284,16 +284,16 @@ body:before {
 
 h1 span {
   position: relative;
-  top: 20px;
+  top: 10px;
   display: inline-block;
-  -webkit-animation: bounce 0.8s ease infinite alternate;
+  -webkit-animation: bounce 1.0s ease infinite alternate;
   font-family: 'Mogra', cursive;
   font-size: 100px;
   color: #801336;
   text-shadow: 0 1px 0 #ee4540, 0 2px 0 #ee4540, 0 3px 0 #ee4540, 0 4px 0 #ee4540,
     0 5px 0 #ee4540, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
     0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
-    letter-spacing: 0px;
+    letter-spacing: 50%;
 }
 
 h1 span:nth-child(2) {
@@ -321,31 +321,31 @@ h1 span:nth-child(7) {
 }
 
 h1 span:nth-child(8) {
-  -webkit-animation-delay: 0.2s;
-}
-
-h1 span:nth-child(9) {
-  -webkit-animation-delay: 0.3s;
-}
-
-h1 span:nth-child(10) {
-  -webkit-animation-delay: 0.4s;
-}
-
-h1 span:nth-child(11) {
-  -webkit-animation-delay: 0.5s;
-}
-
-h1 span:nth-child(12) {
-  -webkit-animation-delay: 0.6s;
-}
-
-h1 span:nth-child(13) {
   -webkit-animation-delay: 0.7s;
 }
 
-h1 span:nth-child(14) {
+h1 span:nth-child(9) {
   -webkit-animation-delay: 0.8s;
+}
+
+h1 span:nth-child(10) {
+  -webkit-animation-delay: 0.9s;
+}
+
+h1 span:nth-child(11) {
+  -webkit-animation-delay: 1.0s;
+}
+
+h1 span:nth-child(12) {
+  -webkit-animation-delay: 1.1s;
+}
+
+h1 span:nth-child(13) {
+  -webkit-animation-delay: 1.2s;
+}
+
+h1 span:nth-child(14) {
+  -webkit-animation-delay: 1.3s;
 }
 
 /* ANIMATION */
@@ -569,6 +569,9 @@ ul li h2 {
 
 @media only screen and (max-width: 800px) {
 
+  .raz{
+    font-size: 60px;
+  }
   [class*="inner-footer"] {
     display: block;
     height: 1100px;
@@ -680,13 +683,14 @@ ul li h2 {
     }
 
     h1 span {
-      font-size: 35px;
+      font-size: 30px;
       
     }
 
     .date {
-      margin-top: -50px;
-      margin-left: -250px;
+      position: absolute;
+      left: 15%;
+      top: 60%;
       font-size: 15px;
     }
 
@@ -755,8 +759,8 @@ ul li h2 {
 
 .loading{
   position:relative; 
-  left: 45%;
-  font-size: 3em;
+  left: 7%;
+  font-size: 2em;
 }
 
 .loading:after {
@@ -782,4 +786,37 @@ ul li h2 {
     text-shadow:
       .25em 0 0 white,
       .5em 0 0 white;}}
+
+
+#loader{
+  position: sticky;
+}
+
+@media only screen and (max-width: 800px){
+  #loader{
+    background-size:100% 100%;
+    height: 50%;
+    margin-top:30%;
+  }
+
+  .loading{
+    position: fixed;
+    /*left: 1%;*/
+    font-size: 10px;
+    
+  }
+  #loader-planet{
+  width: 59%;
+  height: 60%;
+  left: 22%;
+}
+#loader-ufo{
+  width: 20%;
+  height: 30%;
+  animation: animate 4s infinite;
+  animation-timing-function: linear;
+}
+}
+
+
 

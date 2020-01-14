@@ -11,21 +11,29 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Mogra&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
     </head>
     <body>
         
 
         <!--Loader-->
-        <div id="loader">
-    <div class="spinner-wrapper">
-        <div class="spinner"><h1>RAZZMATAZZ <div> is loading</div></h1></div>
-
-        <img id="fairy" src="images/loader.png">
-    </div></div>
+    
+    <div id="loader">
+            <div class="loader-heading"><h1 class="loading">Teleporting to Razzmatazz Universe</h1></div>
+            <div>
+                <img src="./images/ufo1.png" id="loader-ufo">
+            </div>
+            <div >
+                <img id="loader-planet" src="./images/planet1.png">
+            </div>
+        </div>
     <!-- Body -->
+    
         <div id="body">
+            <audio loop autoplay id="music1">
+        <source src="music/music.mp3" type="audio/mp3" />
+      </audio>
         <div class="content" style=" background-image: url(images/home1.jpg);">
             <div class="incand" id="click"><img src="images/color.png"></div>
             <div class="snowflakes" aria-hidden="true">
@@ -72,8 +80,7 @@
                 <span>Z</span>
                 <span>Z</span>      
             </h1>
-
-            <h3 class="date">14th-15th<span> Feb'19</span></h3>
+            <h3 class="date">14th-15th<span> Feb 2020</span></h3>
             
             <div id="witch">
                 <img class="witch" src="images/witch2.png">
@@ -94,10 +101,8 @@
  -->            
 
             <div id="mushroom">
-                <a href="/galleria">
                 <img class="mushroom1" src="images/mushroom2.png">
-                <h2 class="text1">Galleria</h2>
-                </a>
+                <h2 class="text1"><a href="/galleria">Galleria</a></h2>
             </div>
             <div id="mushroom">
                 <img class="mushroom2" src="images/mushroom.png">
@@ -198,26 +203,16 @@
         <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script>
-
+            $("#body").hide()
             
-            $(document).ready(()=>{
+            $(window).load(function() {
+                jQuery("#loader").fadeOut(3000);
+                setTimeout(function(){ $("#body").fadeIn(1500); $("#music1").play();}, 3000);
+               
+                $(".date").hide()
+                setTimeout(function(){ $(".date").fadeIn("swing"); }, 3000);
+            });
 
-                $(window).load(function(){
-                //Your code here
-                    $()
-                    preloaderFadeOutTime = 4000;
-                    function hidePreloader() {
-                    var preloader = $('.spinner-wrapper');
-                    preloader.fadeOut(preloaderFadeOutTime);
-                    }
-                    hidePreloader();
-                    $("#loader").hide()
-                    
-                });
-
-                
-            })
-
-            </script> 
+        </script> 
     </body>
 </html>
